@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prashanth Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Poppins:ital,wght@0,300;1,200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- --------------------------------------------header-------------------------------------- -->
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <h1>Hi, I'm <span>Prashanth</span><br />From India.</h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- -------------------------------------about----------------------------------- -->
+
+    <div id="about">
+      <div class="contianer">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/Prashanth.jpg" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              I am a Student at Velagapudi Ramakrishna Siddhartha Engineering
+              College in Vijayawada, AP. Enthusiastic about web development,
+              coding, DSA, and competitive programming, striving for continuous
+              improvement and impactful contributions. 🌐💻✨
+            </p>
+            <div class="tab-titles">
+              <p
+                class="tab-links active-link"
+                onclick="opentab('Skills',event)"
+              >
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('Certifications',event)">
+                Certifications
+              </p>
+              <p class="tab-links" onclick="opentab('Education',event)">
+                Education
+              </p>
+            </div>
+            <div class="tab-contents active-tab" id="Skills">
+              <ul>
+                <li>
+                  <span>MERN Stack Development</span><br />Basic Web Development
+                  using MERN
+                </li>
+                <li>
+                  <span>Java Script</span><br />Basic knowledge on Java Script
+                </li>
+                <li>
+                  <span>Reactjs</span><br />Frotend Development using React
+                </li>
+                <li>
+                  <span>Nodejs</span><br />Backend Development using Nodejs
+                </li>
+                <li>
+                  <span>C++</span><br />Basic Programming knowledge on Java
+                  Script
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="Certifications">
+              <ul>
+                <li>
+                  <span
+                    >AWS Academy Graduate - AWS Academy Machine Learning
+                    Foundations
+                    <a
+                      href="https://www.credly.com/badges/694c18ab-e2f1-405c-9a0e-965faabb627a"
+                      target="_blank"
+                      ><i class="fa-solid fa-link"></i></a></span
+                  ><br />- Amazon Web Services (AWS)
+                </li>
+                <li>
+                  <span
+                    >AWS Academy Graduate - AWS Academy Cloud Foundations
+                    <a
+                      href="https://www.credly.com/badges/c1f2dfd4-b5ec-4d54-b1e6-d439998082ed"
+                      target="_blank"
+                      ><i class="fa-solid fa-link"></i></a></span
+                  ><br />- Amazon Web Services (AWS)
+                </li>
+                <li>
+                  <span
+                    >CCNA: Introduction to Networks
+                    <a
+                      href="https://www.credly.com/badges/96bfc965-eb7e-4e79-8663-70b0a38e60da"
+                      target="_blank"
+                      ><i class="fa-solid fa-link"></i></a></span
+                  ><br />- Cisco (CCNA & CCNP) Training Center
+                </li>
+                <li>
+                  <span
+                    >CCNA: Introduction to CyberSecurity
+                    <a
+                      href="https://www.credly.com/badges/3b883d86-8cd3-495c-b272-0f1668df800d"
+                      target="_blank"
+                      ><i class="fa-solid fa-link"></i></a></span
+                  ><br />- Cisco (CCNA & CCNP) Training Center
+                </li>
+                <li>
+                  <span
+                    >Python For Machine Learning<a
+                      href="https://www.udemy.com/certificate/UC-28fa2f69-77a5-4163-bbc3-589f7ac3304f/"
+                      target="_blank"
+                      ><i class="fa-solid fa-link"></i></a></span
+                  ><br />- Udemy
+                </li>
+
+                <li>
+                  <span
+                    >CPA - Programming Essentials in C++ English 0123 cga
+                    <a
+                      href="https://drive.google.com/file/d/15qxURrSuzepeSZ-CvkvTfDk8Nd357SBD/view?usp=sharing"
+                      target="_blank"
+                      ><i class="fa-solid fa-link"></i></a></span
+                  ><br />- Cisco Networking Academy
+                </li>
+                <li>
+                  <span
+                    >PCAP - Programming Essentials in Python
+                    <a
+                      href="https://drive.google.com/file/d/1WUueSSeMspFiWlf2Li_DaEQcWsBp8Fen/view?usp=sharing"
+                      target="_blank"
+                      ><i class="fa-solid fa-link"></i></a></span
+                  ><br />- Cisco Networking Academy
+                </li>
+                <li>
+                  <span
+                    >CLA - Programming Essentials in C
+                    <a
+                      href="https://drive.google.com/file/d/1r4N2kVMD4MpiUdR_LokcFJ6xT3HMNdsV/view?usp=sharing"
+                      target="_blank"
+                      ><i class="fa-solid fa-link"></i></a></span
+                  ><br />- Cisco Networking Academy
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="Education">
+              <ul>
+                <li>
+                  <span>2021-present</span><br />Bachelore in Technology in
+                  Information Technology (VRSEC)
+                </li>
+                <li>
+                  <span>2019-2021</span><br />Intermediate in MPC (Narayana Jr
+                  College)
+                </li>
+                <li>
+                  <span>2018-2019</span><br />10th Class (Ravindra Bharathi
+                  School)
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- -------------------------------------Services----------------------------------- -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-brands fa-react"></i>
+            <h2>AquaAlertCNN</h2>
+            <p>
+              Our project is a user-friendly web app enabling easy reporting of
+              water-related issues with image uploads and map location tagging.
+              It utilizes a powerful deep learning model for precise problem
+              classification based on user-uploaded images
+            </p>
+            <p>
+              <span><br />Technologies Used</span><br />Reactjs, NodeJS,
+              Express, MongoDB,Leaflet
+            </p>
+            <a href="#">See More</a>
+          </div>
+          <div>
+            <i class="fa-regular fa-clone"></i>
+            <h2>AmazonClone</h2>
+            <p>
+              Developed a replica of Amazon's interface with a focus on HTML and
+              CSS, demonstrating proficiency in front-end web development.
+            </p>
+            <p>
+              <span><br />Technologies Used</span><br />HTML,CSS
+            </p>
+            <a href="https://github.com/e-prashanth/AmazonClone" target="_blank"
+              >See More</a
+            >
+          </div>
+          <div>
+            <i class="fa-brands fa-node"></i>
+            <h2>Contact<br />Management</h2>
+            <p>
+              This project focuses on backend development, leveraging Node.js,
+              Express.js, and Mongoose. It facilitates efficient contact
+              management, allowing users to create, update, and delete contacts.
+              Additionally, it implements private routes accessible only to the
+              user who created the contact. Aimed at enhancing backend
+              development skills
+            </p>
+            <p>
+              <span><br />Technologies Used</span><br />NodeJS, Express, MongoDB
+            </p>
+            <a
+              href="https://github.com/e-prashanth/ContactsManagement"
+              target="_blank"
+              >See More</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ---------------------------------------contact-------------------------------------------- -->
+    <div class="contact">
+      <div class="container">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fa-solid fa-paper-plane"></i> edeprashanth@gmail.com</p>
+          <p><i class="fa-solid fa-phone-volume"></i> +918688212822</p>
+          <div class="social-icons">
+            <a href="https://github.com/e-prashanth"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/prashanth-ede-37b206258/"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a href="https://twitter.com/EdePrashan14608"
+              ><i class="fa-brands fa-x-twitter"></i
+            ></a>
+          </div>
+          <a href="images/Resume-Prashanth-ede.pdf" download class="btn btn2">Download Resume</a>
+        </div>
+        <div class="contact-right">
+          <form action="">
+            <input type="text" name="Name" placeholder="Your Name" required />
+            <input
+              type="email"
+              name="email"
+              placeholder="your Email"
+              required
+            />
+            <textarea
+              name="Message"
+              id=""
+              rows="6"
+              placeholder="Your Message"
+            ></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="copy">
+            <p>Copyright ©  Prashanth. Made with <i class="fa-solid fa-heart-pulse"></i> by Myself</p>
+    </div>
+    <script>
+        var sidemenu = document.getElementById('sidemenu');
+function openmenu(){
+    sidemenu.style.right = '0';
+}
+
+function closemenu(){
+    sidemenu.style.right = '-200px';
+}
+    </script>
+  </body>
+</html>
