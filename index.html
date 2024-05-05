@@ -27,10 +27,10 @@
         <nav>
           <img src="images/logo.png" class="logo" />
           <ul id="sidemenu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
             <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
           </ul>
           <i class="fa-solid fa-bars" onclick="openmenu()"></i>
@@ -205,22 +205,41 @@
               classification based on user-uploaded images
             </p>
             <p>
-              <span><br />Technologies Used</span><br />Reactjs, NodeJS,
-              Express, MongoDB,Leaflet
+              <span><br />Technologies Used</span><br /><h3 class="techUsed">Reactjs, NodeJS,
+              Express, MongoDB,Leaflet</h3>
             </p>
-            <a href="#">See More</a>
+            <a href="https://github.com/e-prashanth">See More</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-node"></i>
+            <h2>Duck<br />Share</h2>
+            <p>
+              A Flask-based sample project for seamless file sharing. It is a
+              web application built using Flask, a Python web framework. It
+              allows users to upload files to the platform, generating a unique
+              code for each upload. This code can then be shared with others,
+              enabling them to download the file from anywhere.
+            </p>
+            <p>
+              <span><br />Technologies Used</span><br /><h3 class="techUsed">Flask, MongoDB</h3>
+            </p>
+            <a href="https://github.com/e-prashanth/DuckShare" target="_blank"
+              >See More</a
+            >
           </div>
           <div>
             <i class="fa-regular fa-clone"></i>
-            <h2>AmazonClone</h2>
+            <h2>EduSlot</h2>
             <p>
-              Developed a replica of Amazon's interface with a focus on HTML and
-              CSS, demonstrating proficiency in front-end web development.
+              The project aims to help teachers book labs or slots for a class
+              at their convenience by developing a web application for the
+              bookings along with providing recommendations of slots and labs
+              based on the teachers previous bookings
             </p>
             <p>
-              <span><br />Technologies Used</span><br />HTML,CSS
+              <span><br />Technologies Used</span><br /><h3 class="techUsed">React Native , MongoDb , Experss </h3>
             </p>
-            <a href="https://github.com/e-prashanth/AmazonClone" target="_blank"
+            <a href="https://github.com/e-prashanth/Eduslot" target="_blank"
               >See More</a
             >
           </div>
@@ -236,7 +255,7 @@
               development skills
             </p>
             <p>
-              <span><br />Technologies Used</span><br />NodeJS, Express, MongoDB
+              <span><br />Technologies Used</span><br /><h3 class="techUsed">NodeJS, Express, MongoDB</h3>
             </p>
             <a
               href="https://github.com/e-prashanth/ContactsManagement"
@@ -255,17 +274,19 @@
           <p><i class="fa-solid fa-paper-plane"></i> edeprashanth@gmail.com</p>
           <p><i class="fa-solid fa-phone-volume"></i> +918688212822</p>
           <div class="social-icons">
-            <a href="https://github.com/e-prashanth"
+            <a href="https://github.com/e-prashanth" target="_blank"
               ><i class="fa-brands fa-github"></i
             ></a>
-            <a href="https://www.linkedin.com/in/prashanth-ede-37b206258/"
+            <a href="https://www.linkedin.com/in/prashanth-ede-37b206258/" target="_blank"
               ><i class="fa-brands fa-linkedin"></i
             ></a>
-            <a href="https://twitter.com/EdePrashan14608"
+            <a href="https://twitter.com/EdePrashan14608" target="_blank"
               ><i class="fa-brands fa-x-twitter"></i
             ></a>
           </div>
-          <a href="images/Resume-Prashanth-ede.pdf" download class="btn btn2">Download Resume</a>
+          <a href="images/Ede Prashanth Resume.pdf" download class="btn btn2"
+            >Download Resume</a
+          >
         </div>
         <div class="contact-right">
           <form action="">
@@ -282,23 +303,26 @@
               rows="6"
               placeholder="Your Message"
             ></textarea>
-            <button type="submit" class="btn btn2">Submit</button>
+            <button type="submit" class="btn btn2" onclick="handleSubmitForm()">Submit</button>
           </form>
         </div>
       </div>
     </div>
     <div class="copy">
-            <p>Copyright ©  Prashanth. Made with <i class="fa-solid fa-heart-pulse"></i> by Myself</p>
+      <p>
+        Copyright © Prashanth. Made with
+        <i class="fa-solid fa-heart-pulse"></i> by Myself
+      </p>
     </div>
     <script>
-        var sidemenu = document.getElementById('sidemenu');
-function openmenu(){
-    sidemenu.style.right = '0';
-}
+      var sidemenu = document.getElementById("sidemenu");
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
 
-function closemenu(){
-    sidemenu.style.right = '-200px';
-}
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
     </script>
   </body>
 </html>

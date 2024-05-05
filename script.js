@@ -14,3 +14,6 @@ function opentab(tabname,event){
 }
 
 
+function handleSubmitForm(){
+    window.location.reload();
+}
